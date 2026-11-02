@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sand-50: #FAF7F0;
+  --color-sand-100: #F3EDE2;
+  --color-sand-200: #EAE1D3;
+  --color-sand-300: #D8CABB;
+  --color-sand-400: #C2B09F;
+  --color-sand-500: #B69A7D;
+  --color-sand-600: #9C8065;
+  --color-sand-700: #786B5C;
+  --color-sand-800: #5C4F42;
+  --color-sand-900: #493B30;
+  --color-sand-950: #332820;
+
+  --color-earth-primary: #76563E;
+  --color-earth-hover: #5F442F;
+  --color-earth-dark: #493B30;
+  --color-earth-accent: #B69A7D;
+  --color-earth-border: #D8CABB;
+  --color-earth-card: #FAF7F0;
+  --color-earth-bg: #F3EDE2;
+  --color-earth-secondary: #EAE1D3;
+  --color-earth-body: #786B5C;
+  --color-earth-success: #66836A;
+  --color-earth-success-bg: #EDF3EE;
+
+  --font-serif: "Newsreader", "Playfair Display", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-earth-bg, #F3EDE2);
+  color: var(--color-earth-body, #786B5C);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom subtle scrollbars fitting the beige aesthetic */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3EDE2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8CABB;
+  border-radius: 9999px;
+  border: 2px solid #F3EDE2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B69A7D;
+}
